@@ -1,0 +1,9 @@
+def DNA2mRNA (ifname, ofname='mRNA.txt'):
+    f = open(ifname)
+    for x in f:
+        x1 = x.replace('g', 'x')
+        x2 = x1.replace('c', 'g')
+        x3 = x2.replace('x', 'c')
+        x4 = x3.replace('a', 'u')
+        x5 = x4.replace('t', 'a')
+        print(x5)
